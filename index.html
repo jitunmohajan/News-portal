@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Protom Alo Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body class="bg-light bg-gradient">
+
+    <header class="container">
+
+        <!-- top menu start -->
+        <section>
+            <nav class="navbar navbar-expand-lg bg-light fs-6">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><span class="text-primary">Protom Alo</span> Portal</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li id="news" class="nav-item nav-link active">
+                               News
+                            </li>
+
+                            <li id="blog" class="nav-item nav-link">
+                                Blog
+                            </li>
+                           
+                        </ul>
+                       
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <hr>
+        <!-- top menu end -->
+
+        <!-- name of categories list start -->
+        <section class="">
+            <nav id="categories" class="nav nav-pills flex-column flex-sm-row">
+               
+            </nav>
+        </section>
+        <!-- name of categories list end -->
+
+       <!-- number Of Items start -->
+        <section>
+            <div id="numberOfItemsSection" class="mt-5 bg-white pt-4 pb-4 ps-3">
+                 <div id="numberOfItems" class=""> 
+                    
+                 </div>
+            </div>
+        </section>
+        <!-- number Of Items end -->
+    </header>
+
+    <main class="container mt-5">
+
+        <!-- toggle spinner start -->
+        <section id="loader" class="d-none">
+            <div style="height: 400px;" class="d-flex justify-content-center align-items-center">
+                <div class="spinner-border  text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </section>
+        <!-- toggle spinner start -->
+
+        <!-- category details start -->
+        <section>
+            <div id="categoryDetails">
+
+            </div>
+        </section>
+         <!-- category details end -->
+
+         <!-- question and answer start -->
+         <section>
+             <div id="questionAnswer" class="mb-5">
+                 
+            </div>
+        </section>
+        <!-- question and answer end -->
+
+
+
+        <section>
+            <!-- category more details Modal start  -->
+            <div class="modal modal-lg fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-primary" id="staticBackdropLabel">News Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="newsDetail" class="modal-body">
+                        
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- category more details Modal end  -->
+        </section>
+        
+    </main>
+
+    <!-- footer start -->
+    <footer id="fixed-footer" class="bg-white">
+        <div class="text-center pt-5 pb-5">
+            Copyright 2021 Protom Alo Portal
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4430868811.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
